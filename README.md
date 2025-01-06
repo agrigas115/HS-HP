@@ -24,3 +24,24 @@ From the main directory, run the following command to generate the parameter fil
 python PDBID_H.pdb
 ```
 Example output for the PDBID 2f60 is included in the params directory.
+
+
+## Running the HS+HP model
+We include a version of the model in which the initial structure is breifly energy minimized using FIRE energy minimization. This is followed by a constant temperature integration of Langevin dynamics. The coordinates will be periodically output in the .xyz format, which can be visualized using Ovito: https://www.ovito.org
+
+First, compile the code.
+```
+g++ run_run_xtal_HSHP_lang_T0-6.c -O3 -o MD
+```
+No C/C++ libraries are needed to compile the code. The -O3 compilation flag is for optimization and gives a modest speedup. The default temperature is T/\epsilon = 1e-6. The temperature can be changed manually, but make sure to adjust the step size appropriately.
+
+argv[1] : PDBID
+argv[2] : alpha | the attractive range of the hydrophobic interaction
+argv[3] : beta | the attractive depth of the hydrophopbic interaction
+
+The values of alpha and beta result in interaction distances r_alpha and r_beta. Alpha and beta must be chosen so that r_beta < r_alpha. In general, alpha^2 * beta / T ~ 1 samples the region of jamming onset, as described in the paper.
+
+Here is an example run:
+```
+./MD 4f60 1.5 1e-6
+```
