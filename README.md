@@ -17,4 +17,10 @@ PDBID_H.pdb will be used to generate the simulation parameters and as the initia
 
 ## Generating parameters
 
-In order to run the simulation, we need to first identify all bonded and nonbonded interactions. 
+In order to run the simulation, we need to first identify all bonded and nonbonded interactions. This is handled by the python code included called get_params.py. The only non-standard library needed is Biopython: https://biopython.org. This library helps to parse the PDB file.
+
+From the main directory, run the following command to generate the parameter files:
+```
+python PDBID_H.pdb
+```
+Example output for the PDBID 2f60 is included in the params directory.
