@@ -1,6 +1,6 @@
 # A stereochemically accurate all-atom protein model with hydrophobic interactions: Hard-sphere + hydrophobicity (HS+HP) protein model
 
-This repository contains the necessary files to parameterize and run multiple versions the HS and HS+HP models under energy minimization and Langevin dynamics.
+This repository contains the necessary files to parameterize and run the HS+HP model under energy minimization and Langevin dynamics.
 
 This project was initially developed to understand the jamming transition in folded proteins. Read more: https://arxiv.org/abs/2405.09646
 
