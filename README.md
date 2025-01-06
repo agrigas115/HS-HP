@@ -1,4 +1,4 @@
-# The Hard-sphere (HS) and Hard-sphere + hydrophobicity (HS+HP) protein models
+# A stereochemically accurate all-atom protein model with hydrophobic interactions: Hard-sphere + hydrophobicity (HS+HP) protein model
 
 This repository contains the necessary files to parameterize and run multiple versions the HS and HS+HP models under energy minimization and Langevin dynamics.
 
@@ -14,5 +14,7 @@ phenix.reduce -Trim -quiet PDBID.pdb > PDBID_noH.pdb
 phenix.reduce -quiet PDBID_noH.pdb > PDBID_H.pdb
 ```
 PDBID_H.pdb will be used to generate the simulation parameters and as the initial coordinates.
+
 ## Generating parameters
 
+In order to run the simulation, we need to first identify all bonded and nonbonded interactions. 
