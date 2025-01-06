@@ -1,0 +1,106 @@
+{
+
+"GLY":["NCA", "NH", "CAC", "CO", 
+	   "CAHA2", "CAHA3"] ,    
+          
+"VAL":["NCA", "NH", "CAC", "CO",
+       "CACB", "CBCG1", "CBCG2", "CAHA", "CBHB", "CG1HG11", 
+       "CG1HG12", "CG1HG13", "CG2HG21", "CG2HG22", "CG2HG23"],
+               
+"SER":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBOG", "CBHB2", "CBHB3", "OGHG"],
+               
+"TYR":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3", "CBCG", "CGCD1", "CGCD2", 
+       "CD1CE1", "CD2CE2", "CE1CZ", "CE2CZ", "CZOH", "OHHH", 
+       "CD1HD1", "CD2HD2","CE1HE1", "CE2HE2", "CZHH"],
+               
+"ASP":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBCG", "CBHB2", "CBHB3", "CGOD1", "CGOD2"],
+               
+               
+"HIS":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3", "CBCG",
+       "CGND1", "CGCD2", "ND1CE1", "CD2NE2", "CD2HD2",
+       "CE1HE1", "CE1NE2"], 
+               
+"PHE":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3", "CBCG", "CGCD1", "CGCD2", 
+       "CD1CE1", "CD2CE2", "CE1CZ", "CE2CZ", 
+       "CD1HD1", "CD2HD2","CE1HE1", "CE2HE2","CZHZ"],
+               
+"LEU":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3", "CBCG",
+       "CGCD1", "CGCD2", "CGHG", 
+       "CD1HD11", "CD1HD12", "CD1HD13",
+       "CD2HD21", "CD2HD22", "CD2HD23"],
+               
+"THR":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB", 
+       "CBOG1", "CBCG2", "OG1HG1",
+       "CG2HG21", "CG2HG22", "CG2HG23"],
+               
+"LYS":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA",
+       "CBCG", "CGCD", "CDCE", "CENZ", 
+       "CBHB2", "CBHB3", "CGHG2", "CGHG3", 
+       "CDHD2", "CDHD3", "CEHE2", "CEHE3",
+       "NZHZ1", "NZHZ2", "NZHZ3"],
+               
+"ILE":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBCG1", "CBCG2",
+       "CG1CD1", "CG1HG12", "CG1HG13",
+       "CG2HG21", "CG2HG22","CG2HG23",
+       "CD1HD11", "CD1HD12", "CD1HD13",
+       "CBHB"],
+               
+"ASN":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGOD1", "CGND2", 
+       "ND2HD21", "ND2HD22"],
+               
+"ARG":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGHG2", "CGHG3",
+       "CGCD", "CDHD2", "CDHD3",
+       "CDNE", "NECZ", "CZNH1", "CZNH2", "NEHE", 
+       "NH1HH11", "NH1HH12", "NH2HH21", "NH2HH22"],
+               
+"GLU":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGHG2", "CGHG3", 
+       "CGCD", "CDOE1", "CDOE2"],
+               
+"GLN":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGHG2", "CGHG3", 
+       "CGCD", "CDOE1", "CDNE2", "NE2HE21", "NE2HE22"],
+               
+"PRO":["NCA", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGHG2", "CGHG3", 
+       "CGCD", "CDHD2", "CDHD3",
+       "NCD"],
+               
+"ALA":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA",
+       "CBHB1", "CBHB2", "CBHB3"],
+               
+"CYS":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBSG", "SGHG"],
+               
+"MET":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGHG2", "CGHG3", 
+       "CGSD", "SDCE", "CEHE1", "CEHE2", "CEHE3"],
+               
+"TRP":["NCA", "NH", "CAC", "CO",
+       "CACB", "CAHA", "CBHB2", "CBHB3",
+       "CBCG", "CGCD1", "CD1NE1", "NE1CE2", "CD2CE2", "CE2CZ2",
+       "CD2CE3", "CE3CZ3", "CZ3CH2", "CZ2CH2", 
+       "CD1HD1", "NE1HE1", "CZ2HZ2", "CH2HH2", "CZ3HZ3",
+       "CE3HE3",
+	"CGCD2"]
+               
+              } 
