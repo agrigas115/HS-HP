@@ -21,7 +21,7 @@ In order to run the simulation, we need to first identify all bonded and nonbond
 
 From the main directory, run the following command to generate the parameter files:
 ```
-python PDBID_H.pdb
+python get_params.py PDBID_H.pdb
 ```
 Example output for the PDBID 2f60 is included in the params directory.
 
