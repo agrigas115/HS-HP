@@ -48,4 +48,5 @@ Here is an example run:
 ./MD 4f60 1.5 1e-6
 ```
 The trajectory output is written in the .xyz format and can be directly loaded in the Ovito visualization software: https://www.ovito.org
+
 Ovito will only render the trajectory in the all-atom sphere format. Other diagrams can be rendered by PyMol or VMD if the trajectory coordinates are reformatted.
