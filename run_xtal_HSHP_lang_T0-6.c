@@ -664,10 +664,12 @@ void reset_omega(double coords[][3], int CA1_omega_array[], int C_omega_array[],
 // -Run constant temperature dynamics via Langevin
 int main(int argc, char *argv[]) {
 	
-	remove("traj_lang.xyz");
-	remove("traj_comp.xyz");
-	remove("fcheck.txt");
-	
+    char buf[0x100];
+
+	snprintf(buf, sizeof(buf), "traj_%s_alpha_%s_beta_%s_T-6.xyz",argv[1],argv[2],argv[3]);
+	remove(buf);
+	remove("traj_em.xyz");
+
 	printf("Welcome!\n");
 	srand(time(0));
 	double total_potential_energy = 0;
@@ -698,9 +700,8 @@ int main(int argc, char *argv[]) {
 	FILE *fp;
 	int num_atoms = 0;  
     char c;
-    char buf[0x100];
-	//snprintf(buf, sizeof(buf), "params/%s_params/coords.txt",argv[1]);
-	snprintf(buf, sizeof(buf), "em_xtal_coords/coords_%s.txt",argv[1]);
+	snprintf(buf, sizeof(buf), "params/%s_params/coords.txt",argv[1]);
+	//snprintf(buf, sizeof(buf), "em_xtal_coords/coords_%s.txt",argv[1]);
     fp = fopen(buf, "r"); 
     // Check if file exists 
     if (fp == NULL) 
@@ -1274,7 +1275,7 @@ int main(int argc, char *argv[]) {
 				x_box = coords[j][0] - avg_x; 
 				y_box = coords[j][1] - avg_y; 
 				z_box = coords[j][2] - avg_z; 
-				fprintf(out_file, "\t%lf\t%lf\t%lf\n", x_box, y_box, z_box); // write to file
+				fprintf(out_file, "\t%lf\t%lf\t%lf\t%lf\n", x_box, y_box, z_box, sigma_i_array[j]); // write to file
 			}
 			fclose(out_file);
 			
@@ -1382,7 +1383,7 @@ int main(int argc, char *argv[]) {
         	
         	printf("Count = %d\n",count);
 
-            snprintf(buf, sizeof(buf), "traj_data/traj_%s_alpha_%s_beta_%s_T-6.xyz",argv[1],argv[2],argv[3]);
+            snprintf(buf, sizeof(buf), "traj_%s_alpha_%s_beta_%s_T-6.xyz",argv[1],argv[2],argv[3]);
 			FILE *out_file = fopen(buf, "a+"); // write only 
 			// test for files not existing. 
 			if (out_file == NULL){   
@@ -1399,7 +1400,7 @@ int main(int argc, char *argv[]) {
 				x_box = coords[j][0]; 
 				y_box = coords[j][1]; 
 				z_box = coords[j][2]; 
-				fprintf(out_file, "\t%lf\t%lf\t%lf\n", x_box, y_box, z_box); // write to file
+				fprintf(out_file, "\t%lf\t%lf\t%lf\t%lf\n", x_box, y_box, z_box, sigma_i_array[j]); // write to file
 			}
 			fclose(out_file);
 			
