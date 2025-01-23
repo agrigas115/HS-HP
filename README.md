@@ -45,7 +45,7 @@ The values of alpha and beta result in interaction distances r_alpha and r_beta.
 
 Here is an example run:
 ```
-./MD 4f60 1.5 1e-6
+./MD 2f60 1.5 1e-6
 ```
 The trajectory output is written in the .xyz format and can be directly loaded in the Ovito visualization software: https://www.ovito.org
 
