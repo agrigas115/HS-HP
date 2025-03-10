@@ -31,7 +31,7 @@ We include a version of the model in which the initial structure is breifly ener
 
 First, compile the code.
 ```
-g++ run_run_xtal_HSHP_lang_T0-6.c -O3 -o MD
+g++ run_xtal_HSHP_lang_T0-6.c -O3 -o MD
 ```
 No C/C++ libraries are needed to compile the code. The -O3 compilation flag is for optimization and gives a modest speedup. The default temperature is T/\epsilon = 1e-6. The temperature can be changed manually, but make sure to adjust the step size appropriately.
 
