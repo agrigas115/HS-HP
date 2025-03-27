@@ -2,7 +2,7 @@
 
 This repository contains the necessary files to parameterize and run the HS+HP model under energy minimization and Langevin dynamics.
 
-This project was initially developed to understand the jamming transition in folded proteins. Read more: https://arxiv.org/abs/2405.09646
+This project was initially developed to understand the jamming transition in folded proteins. Read more: https://journals.aps.org/prxlife/abstract/10.1103/PRXLife.3.013018
 
 ## Adding hydrogens
 Protein x-ray crystal structures are often deposited on the Protein Databank without all the appropriate hydrogens, as they can be difficult to resolve. Therefore, we need to appropriately add hydrogens to the structures before simulating them. Additionally, we need all the atom names to be consistent with what our parameter generation code expects. 
